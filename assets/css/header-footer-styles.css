@@ -58,13 +58,6 @@
     border-top: 4px var(--unwc-grey) solid;
 }
 
-#map {
-    height: 500px;
-    width: 80%;
-    border: 2px var(--ocean) solid;
-    margin: 0 auto;
-}
-
 .margin-bot-p{
     margin-bottom: 1.5rem;
 }
