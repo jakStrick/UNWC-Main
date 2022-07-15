@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--
+        /**
+        * Creator/ David Strickland
+        * Date: March, 2022
+        * Copyright: UNWC
+        *
+        * Fonts:
+        * @license
+        * MyFonts Webfont Build ID 158821
+        *
+        * The fonts listed in this notice are subject to the End User License
+        * Agreement(s) entered into by the website owner. All other parties are
+        * explicitly restricted from using the Licensed Webfonts(s).
+        *
+        * You may obtain a valid license from one of MyFonts official sites.
+        * http://www.fonts.com
+        * http://www.myfonts.com
+        * http://www.linotype.com
+        *
+        */
+        -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="assets/css/index-page-styles.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/who-we-are-page-styles.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/font-and-color-palette-styles.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/header-footer-styles.css" defer>
+        <link rel="stylesheet" type="text/css" href="assets/Fonts/MyFontsWebfontsKit.css">
+        <link rel="icon" type="image/png" href="images/logo/2018.UNWC.FINAL.web.png" sizes="32x32">
+
+        <script type="text/jscript" src="assets/js/board-member-bio-popup.js" defer></script>
+        <script type="text/jscript" src="assets/js/navigation-and-footer-markup.js" defer></script>
+        <script type="text/jscript" src="assets/js/general-functions.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <title>The Board</title>
+    </head>
+
+    <body>
+
+        <header class="header-hero">
+            <!-- propogates navigation boilerplate -->
+            <div class="section-navigation"><navigation-component></navigation-component></div>
+                
+            <img id="main-header-image" src="/images/header/pic-4/singular-mushroom.jpg" style="width:100%" alt="A single white mushroom on a tree stump."/>
+        
+            <h1 class="main-header">Who We Are</h1>
+        </header>
+
+        <main>
+            
+            <section class="section-module btm-separator-line-thin">
+                <div class="board-section-module ">
+                    <h2 class="section-header">OUR PURPOSE</h2>
+                    <div class="module-p our-purpose">
+                        <p>The Upper Nehalem Watershed Council was founded in 1996 to help maintain the health of the waterways and wildlife in the Upper Nehalem Valley. Nestled in the northwest corner of Oregon, the UNWC works with other organizations, community members, and stakeholders to complete projects and share information.</p>
+                        <p>Having a healthy watershed is important. It impacts animals and vegetation which, in turn, have consequences for people and communities. A poorly managed watershed can see loss of habitat and species, contribute to larger flood events, and impact the economy.</p>
+                        <p>With so many key interests, collaboration and cooperation are vital. The UNWC provides a framework for all stakeholder voices to be heard and to coordinate efforts towards shared goals.</p>
+                        <p><strong>Mission Statement:</strong> To foster stewardship and understanding of the natural resources of the Upper Nehalem Watershed among the stakeholders of the watershed communities in order to protect, conserve, restore and sustain the health and functions of the watershed.</p>
+                        <p><strong>Vision Statement:</strong> A balanced ecosystem that supports a healthy watershed which provides for an economic base and viable watershed communities.</p>
+                    </div>
+                    <div class="deep-dive">
+                        <h3 class="minor-header m-h">Want A Deep Dive?</h3>
+                        <ul class="deep-dive-info">
+                            <li><a href="files/reports/unwc-charter-original.pdf" target="_blank" rel="noopener noreferrer">Read Our Original Charter</a></li>
+                            <li><a href="files/reports/unwc-bylaws-amended-june-2016.pdf" target="_blank" rel="noopener noreferrer">Read Our Bylaws</a></li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">See Board Meeting Minutes</a></li>
+                            <li><a href="files/reports/unwc-strategic-plan-2017-2019.pdf" target="_blank" rel="noopener noreferrer">View Our Strategic Action Plan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Maggie Peyton -->
+            <section class="section-module btm-separator-line-thin">
+                <h2 class="section-header">Our Team</h2>
+
+                <div id="the-modal" class="modal" >
+                                        
+                    <!-- Modal content -->
+                    <div id="m-content" class="modal-content">
+                        <span id="m-span" class="close" onclick="closeModal('the-modal')">x</span>
+                        <p id="bio"></p>
+    
+                    </div>
+                    
+                </div>
+                
+                <div class="flex-container">
+                    <!-- Maggie Tangier -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img class="team-member-photo" src="/images/board-members/maggie-tangier.jpg" alt="Maggie Peyton standing in front of a green door.">
+                        </div>
+
+                        <div class="team-member-content">
+                            <div class="team-member-name">Maggie Peyton</div>
+                            <div class="titles">Executive Director</div>
+                            <div class="team-member-bio">Executive Director and founding member of UNWC (EST 1996), I volunteered for the first 1.5...</div>
+
+                            <!-- The Modal -->
+                            <button id="modal-btn" class="modal-button" onclick="memberBioModal('the-modal', 'peyton')">View Full Bio</button>
+                        </div>
+                    </div>
+
+                    <!-- Michael Calhoun -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img class="team-member-photo" src="/images/board-members/michael-calhoun.jpg" alt="Michael Calhoun standing in front of a body of water.">
+                        </div>
+
+                        <div class="team-member-content">
+                            <div class="team-member-name">Michael Calhoun</div>
+                            <div class="titles title">Chair</div>
+                            <div class="team-member-bio">Michael Calhoun joined the Upper Nehalem Watershed Council Board in 2021 after having previously...</div>
+
+                            <!-- The Modal -->
+                            <button id="modal-btn" class="modal-button" onclick="memberBioModal('the-modal', 'calhoun')">View Full Bio</button>
+                        </div>
+                    </div>
+
+                    <!-- Rick Osbourne -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img class="team-member-photo" src="/images/board-members/rick-osborne.jpg" alt="Rick Osbourne fly fishing.">
+                        </div>
+
+                        <div class="team-member-content">
+                            <div class="team-member-name">Rick Osbourne</div>
+                            <div class="titles">Vice Chair</div>
+                            <div class="team-member-bio">Rick is a member of the Fishhawk Lake community in Birkenfeld and acts as a representative of...</div>
+                                
+
+                            <!-- The Modal -->
+                            <button id="modal-btn" class="modal-button book-antiqua-bold" onclick="memberBioModal('the-modal', 'osbourne')">View Full Bio</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Diane Turner -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img class="team-member-photo" src="/images/board-members/diane-turner-maller.jpg" alt="Diane Turner Maller, smiling, wearing a purple beanie that matches her purple turtle neck sweater.">
+                        </div>
+
+                        <div class="team-member-content">
+                            <div class="team-member-name">Diane Turner Maller</div>
+                            <div class="titles mb-1">Secretary</div>
+                            <div class="team-member-bio">Diane, with her husband, Sam, has made her home in Vernonia since 2013. She grew up in a logging...</div>
+
+                            <!-- The Modal -->
+                            <button id="modal-btn" class="modal-button " onclick="memberBioModal('the-modal', 'maller')">View Full Bio</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Eric DeWitt -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img class="team-member-photo" src="/images/board-members/eric-dewitt.jpg" alt="Eric DeWitt looking serious, wearing an orange hard hat standing in front of a tree.">
+                        </div>
+
+                        <div class="team-member-content">
+                            <div class="team-member-name">Eric DeWitt</div>
+                            <div class="titles mb-1">Treasurer</div>
+                            <div class="team-member-bio">Eric, our Weyerhaeuser representative, joined the UNWC Board in 2021 as the treasurer...</div>
+    
+                            <!-- The Modal -->
+                            <button id="modal-btn" class="modal-button" onclick="memberBioModal('the-modal', 'dewitt')">View Full Bio</button>
+                        </div>
+                    </div>
+
+                     <!-- Susan Schmidlin -->
+                     <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img class="team-member-photo" src="/images/board-members/susan-schmidlin.jpg" alt="Susan Schmidlin smiling with her glasses on top of her head.">
+                        </div>
+
+                        <div class="team-member-content">
+                            <div class="team-member-name">Susan Schmidlin</div>
+                            <div class="titles mb-1">Member-at-Large</div>
+                            <div class="team-member-bio">Susan and her family own acreage with timber and farm ground for a herd of Black Angus...</div>
+
+                            <!-- The Modal -->
+                            <button id="modal-btn" class="modal-button" onclick="memberBioModal('the-modal', 'schmidlin')">View Full Bio</button>
+
+                        </div>
+                    </div>
+
+                    <!-- Susan Spicer Pon -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                            <img class="team-member-photo" src="/images/board-members/susan-spicer-pond.jpg" alt="Susan Spicer-Pond dead pan smile wearing brown, oblong earings, glasses and a striped shirt.">
+                        </div>
+
+                        <div class="team-member-content">
+                            <div class="team-member-name">Susan Spicer-Pond</div>
+                            <div class="titles mb-1">??? Need Title ???</div>
+                            <div class="team-member-bio">Need write up....</div>
+
+                            <!-- The Modal -->
+                            <button id="modal-btn" class="modal-button" onclick="memberBioModal('the-modal', 'pond')">View Full Bio</button>
+
+                        </div>
+                    </div>
+
+                    <!-- Wade Bullier -->
+                    <div class="team-member-card">
+                        <div class="team-member-photo">
+                                <img class="team-member-photo" src="/images/board-members/wade-bullier.jpg" alt="Wade Bullier child picture, standing on the riverbed fishing in the river.">
+                        
+                        </div>
+
+                        <div class="team-member-content">
+                            <div class="team-member-name">Wade Bullier</div>
+                            <div class="titles mb-1">Member-at-Large</div>
+                            <div class="team-member-bio">Wade Bullier is a fourth generation native Oregonian engaged in the management of a family-owned...</div>
+                            
+                            <!-- The Modal -->
+                            <button id="modal-btn" class="modal-button" onclick="memberBioModal('the-modal', 'bullier')">View Full Bio</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+            <section class="section-module">
+                <!--the map -->
+                <h2 class="section-header">Our Place</h2>
+                <div id="map">
+            
+                    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                    <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7E80W3TP3YyfJlsOZoWxKPMajHkYNIeg&callback=initMap&v=weekly"
+                    async
+                    ></script>
+                </div>
+            </section>
+            <div>
+                <span class="horizontal-line-thin"></span>
+            </div> 
+        </main>
+
+        <!--Links boilerplate footer-->
+        <footer-component></footer-component>
+        <script src="assets/js/UNWC-map.js"></script>
+        
+
+    </body>
+</html>
+
+

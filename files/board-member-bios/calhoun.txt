@@ -1,0 +1,8 @@
+<div class="team-member-name">Michael Calhoun</div>
+<div class="titles">Chair</div> 
+
+
+<div class="team-member-bio">
+<p>Michael Calhoun joined the Upper Nehalem Watershed Council Board in 2021 after having previously been a college intern with UNWC. Born and raised in Vernonia on Rock Creek, Michael came to appreciate the local ecosystem and today is involved in several conservation and environmental activist efforts.</p>
+
+<p>Michael holds a BA in Communication from Western Oregon University and a BA in Environmental Studies from University of Oregon. He also serves as the Assistant Zone 2 Director for the Columbia Soil and Water Conservation District.</p></div>

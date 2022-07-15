@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--
+        /**
+        * Creator/ David Strickland
+        * Date: March, 2022
+        * Copyright: UNWC
+        *
+        * Fonts:
+        * @license
+        * MyFonts Webfont Build ID 158821
+        *
+        * The fonts listed in this notice are subject to the End User License
+        * Agreement(s) entered into by the website owner. All other parties are
+        * explicitly restricted from using the Licensed Webfonts(s).
+        *
+        * You may obtain a valid license from one of MyFonts official sites.
+        * http://www.fonts.com
+        * http://www.myfonts.com
+        * http://www.linotype.com
+        *
+        */
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="assets/css/index-page-styles.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/contact-page-styles.css">
+        
+        <link rel="stylesheet" type="text/css" href="assets/css/font-and-color-palette-styles.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/header-footer-styles.css" defer>
+        <link rel="stylesheet" type="text/css" href="assets/Fonts/MyFontsWebfontsKit.css">
+        <link rel="icon" type="image/png" href="images/logo/2018.UNWC.FINAL.web.png" sizes="32x32">
+        <script type="text/jscript" src="assets/js/navigation-and-footer-markup.js" defer></script>
+        <script type="text/jscript" src="assets/js/general-functions.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <title>Contact</title>
+    </head>
+
+    <body>
+    
+        <header class="header-hero">
+            <!-- propogates navigation boilerplate -->
+            <div class="section-navigation"><navigation-component></navigation-component></div>
+                
+            <img id="main-header-image" src="/images/header/pic-4/rock-creek-watershed.jpg" style="width:100%" alt="Rock Creek watershed with an over hanging creepy tree."/>
+        
+            <h1 class="main-header">Contact</h1>
+        </header>
+      
+        <main>
+            <section class="section-module btm-separator-line-thin unwc-grey">
+                <h2 class="section-header">Stay In Touch</h2>
+                <div class="contact-form-container">
+                    <form class="contact-form" action="https://formsubmit.co/claiuto@gmail.com" method="POST">
+                        <h3 class="contact-info-header fertigo-pro-regular">Contact Information</h3>
+                        <div class="fields">
+            
+                            <label class="book-antiqua-regular" for="name"><strong>Name</strong></label>
+                            <input class="book-antiqua-regular" type="text" name="name" id="name" placeholder="Name" required/>
+            
+                            <label class="book-antiqua-regular" for="email"><strong>Email</strong></label>
+                            <input class="book-antiqua-regular" type="email" name="email" id="email" placeholder="Email" required />
+                            <label class="book-antiqua-regular" for="message"><strong>Message</strong></label>
+                            <textarea class="book-antiqua-regular" name="message" id="message" placeholder="Type Your Message"></textarea>
+            
+                            <input type="hidden" name="_next" value="http://jakspage.com/thanks.html">
+                            <input type="hidden" name="_subject" value="New submission!">
+                            <input type="hidden" name="_template" value="table">
+                        </div>
+                        <div class="actions">
+                            <input type="submit" value="Send" class="primary" />
+                        </div>
+                    </form>
+                    <div class="unwc-address">
+                        <h3 class="exec-title">Maggie Peyton, Executive Director</h3>
+                        <ul>
+                            <li>1201 Texas Avenue, Suite A<br>Veronia, OR 97064</li>
+                            <li>Phone: (503) 396-2046</li>
+                            <li>Email: maggie@nehalem.org</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-module">
+                <!--the map -->
+                <h2 class="section-header">Come Visit</h2>
+                <div id="map">
+            
+                    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                    <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7E80W3TP3YyfJlsOZoWxKPMajHkYNIeg&callback=initMap&v=weekly"
+                    async
+                    ></script>
+                </div>
+            </section>
+        </main>
+
+
+         <!--Links boilerplate footer-->
+         <footer-component></footer-component>
+         <script src="assets/js/UNWC-map.js"></script>
+         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    </body>
+
+</html>

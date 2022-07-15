@@ -1,0 +1,104 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* board member volunteer section */
+.board-member-volunteer-content{
+  display: flex;
+  place-content: center;
+  place-items: center;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+.planting-img{
+  max-width: 100%;
+  width: 28rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+} 
+
+.board-message{
+  flex-basis: 28rem;
+  padding: .5rem;
+  margin: 0 1rem;
+  border: 2px var(--ocean) solid;
+}
+
+/* middle section "Project Volunteers */
+.project-section-module{
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* bottom section Youth Involvement*/
+.youth-involvement{
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem 3rem 1rem;
+}
+
+/* message above the three pictures */
+.module-p-border{
+  border: 2px var(--basil) solid;
+  padding: .5rem;
+}
+
+/* images */
+.youth-pic-container{
+  display: grid;
+  place-content: center;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template: "img-one img-two img-three";
+  grid-auto-flow: column;
+  max-width: 100%;
+  width: 100%;
+  column-gap: 3rem;
+  row-gap: 2rem;
+  transition: all 2s ease-in-out;
+}
+
+.youth-volunteers-img{
+  width: 35rem;
+  height: auto;
+  transition: all 1s ease-in-out;
+}
+
+@media screen and (max-width: 112.5rem){
+
+  .youth-volunteers-img{
+    width: 30rem;
+    transition: all 1s ease-in-out;
+  }
+
+  .youth-pic-container{
+    grid-template-rows: 1fr;
+    grid-template: 
+    "img-one" 
+    "img-two" 
+    "img-three";
+  }
+}
+
+@media screen and (max-width: 75rem) {
+
+  .youth-volunteers-img{
+    width: 22rem;
+    transition: all 1s ease-in-out;
+  }
+}
+
+
+
+
+
+ 

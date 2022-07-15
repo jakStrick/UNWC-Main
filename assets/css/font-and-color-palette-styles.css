@@ -1,0 +1,179 @@
+
+/* Clear */
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    /* color pallet */
+    --dusty-blue: #D5E2E9;
+    --morning: #B5D4DA;
+    --ocean: #76BAD2;
+    --moss: #D9E4DF;
+    --rosemary: #C0D8C6;
+    --basil: #87B693;
+    --oregon-sky: #BDC0B1;
+    --sage: #808471;
+    --fir: #666959;
+    --dusty-pink: #EFC8CB;
+    --powder: #E9AFB2;
+    --mauve: #762620;
+    --white-beach: #E9E4D2;
+    --sand: #DAD3AF;
+    --clay: #C5B672;
+    --unwc-grey: #CFD1D5;
+    --rich-grey: #737478;
+    --rich-black: #151417;
+    --paper: #ffffff;
+    --resource-blue: hsl(215, 49%, 45%, 100%); 
+
+    /* Fonts */
+    --font-size-200: .5em; /*---/* nav bar /*---*/
+    --font-size-250: .8em;
+    --font-size-300: 1em; /*---- body and paragraphs ----*/
+    --font-size-400: 1.125em;
+    --font-size-500: 1.2em; /*---- names ----*/
+    --font-size-600: 1.45em; /*---- nav bar button font ----*/
+    --font-size-650: 1.95em;
+    --font-size-700: 2.8em; /*---- important title header ----*/
+    --font-size-800: 3em;
+    --font-size-900: 3.75em; /*---- page title headers ----*/
+    --font-header-main: clamp(2rem, 4vw, 9rem);
+    --font-header-section: clamp(1.1rem, 2.5vw, 3.5rem);
+    --font-header-minor: clamp(.8rem, 1vw, 1.5rem);
+    --font-body-paragraph: clamp(1rem, 1.2vw, 1.5rem);
+    --font-name: clamp(.8rem, 1vw, 1.5rem);
+    --font-titles: clamp(1rem, 1.5vw, 1.3rem);
+    --font-name: clamp(.8rem, 1vw, 1.5rem);
+
+    --max-media-width: 75rem;
+    --min-media-width: 40rem;
+  }
+
+  .dusty-blue{
+    background-color: var(--dusty-blue);
+  }
+  .morning{
+    background-color: var(--morning);
+  }
+  .ocean{
+    background-color: var(--ocean);
+  }
+  .moss{
+    background-color: var(--moss);
+  }
+  .rosemary{
+    background-color: var(--rosemary);
+  }
+  .basil{
+    background-color: var(--basil);
+  }
+  .oregon-sky{
+    background-color: var(--oregon-sky);
+  }
+  .sage{
+    background-color: var(--sage);
+  }
+  .fir{
+    background-color: var(--fir);
+  }
+  .dusty-pink{
+    background-color: var(--dusty-pink);
+  }
+  .powder{
+    background-color: var(--powder);
+  }
+  .mauve{
+    background-color: var(--mauve);
+  }
+  .white-beach{
+    background-color: var(--white-beach);
+  }
+  .sand{
+    background-color: var(--sand);
+  }
+  .clay{
+    background-color: var(--clay);
+  }
+ .unwc-grey{
+    background-color: var(--unwc-grey);
+ }
+ .rich-grey{
+    background-color: var(--rich-grey);
+ }
+ .rich-black{
+    background-color: var(--rich-black);
+ }
+ .paper{
+    background-color: var(--paper);
+ }
+ .resource-blue{
+    background-color: var(--resource-blue);
+ }
+
+.fertigo-pro-regular{
+  font-family: "FertigoPro-Regular";
+}
+
+.book-antiqua-regular{
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: var(--font-body-paragraph);
+}
+
+.book-antiqua-bold{
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: var(--font-body-paragraph);
+  font-weight: bold;
+}
+
+.section-w-h{
+  width: 100%;
+  height: auto;
+  margin: 3rem 0;
+}
+
+.main-header,
+.section-header,
+.minor-header{
+  font-family: "FertigoPro-Regular";
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.team-member-name{
+  font-weight: 900;
+}
+
+.main-header{
+  font-size: var(--font-header-main);
+}
+
+.section-header{
+  font-size: var(--font-header-section);
+}
+
+.minor-header{
+  font-size: var(--font-header-minor); 
+}
+
+.titles{
+  font-size: var(--font-titles);
+  font-style: italic
+  
+}
+
+body, a, p,
+.module-p{
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: var(--font-body-paragraph);
+}
+
+
+
+p{
+  padding-bottom: 1rem;
+}
+
+

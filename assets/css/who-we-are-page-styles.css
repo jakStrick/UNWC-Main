@@ -1,0 +1,214 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* purpose statement section */
+.board-section-module{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--grey);
+}
+
+.our-purpose{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+/* deep dive */
+.deep-dive{
+  max-width: 100%;
+  width: 30%;
+  height: 40rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  border: 2px var(--sage) solid;
+  box-shadow: 0 0px 8px 2px hsl(0, 100%, 97%, 70%);
+  max-width: 60rem;
+}
+
+.deep-dive-info{
+  list-style: none;
+  line-height: 2.5rem;
+}
+
+.deep-dive a:hover{
+  color: var(--powder);
+}
+
+.m-h{
+  padding-top: 2rem;
+}
+
+/* board members */
+.flex-container{
+    display: flex;
+    position: relative;
+    place-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* .f-1{
+   padding-bottom: 5rem;
+} */
+
+.team-member-cards{
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+}
+
+.team-member-card{
+    background: var(--paper);
+    box-shadow: 0 0px 12px 4px hsl(0,0%,50%,45%);
+}
+
+.team-member-photo,
+.team-member-content{
+    width: 25rem;
+    height: auto;
+    object-fit: contain;
+}
+
+.team-member-name,
+.team-member-bio, 
+.titles{
+    margin-left: .4rem;
+    padding: 0 .5rem .5rem 0;
+}
+
+.team-member-name,
+.modal-button,
+.titles{
+  font-family: 'Book Antiqua', Times, serif;
+  font-size: var(--font-body-paragraph);
+  font-weight: bold;
+}
+
+/* The Modal (background) */
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding: 3rem 1rem;
+  }
+  
+  /* Modal Content */
+  .modal-content{
+    position: static;
+    background-color: #fefefe;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 1rem 0 1rem;
+    border-radius: 1rem;
+    border: 1px solid #888;
+    box-shadow: 0 0px 8px 2px hsl(0, 100%, 97%, 70%);
+    max-width: 60rem;
+    width: minmax(23rem, 60rem);
+    height: auto;
+  }
+
+  .modal-button{
+    width: minmax(5rem, 10rem);
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    margin-left: .5rem;
+    font-size: var(--font-size-350);
+    font-weight: 900;
+    color: var(--mauve);
+  }
+
+  .modal-button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--ocean);
+  }
+  
+  /* The Close Button */
+  .close{
+    color: var(--powder);
+    float: right;
+    font-size: 35px;
+    margin-top: -2rem;
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus{
+    color: var(--fir);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* map area */
+#map {
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px var(--ocean) solid;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 50rem){
+
+    .our-purpose{
+        padding: 0 1rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /* deep dive */
+    .deep-dive{
+      width: 90%;
+      margin-top: 2rem;
+    }
+
+    /* board members */
+    .flex-container{
+        row-gap: .5rem;
+    }
+
+    .f-1{
+        padding-bottom: .5rem;
+     }
+
+     .team-member-card{
+        transform: scale(.89);
+    }
+
+    .unwc-map{
+      margin: 5rem 0rem 5rem 0rem;
+  }
+
+}
+
+
+
+
+
+

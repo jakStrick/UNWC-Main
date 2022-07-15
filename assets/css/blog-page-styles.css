@@ -1,0 +1,98 @@
+/* reset */
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+.blog-header{
+    text-align: left;
+    padding: 0rem 0 2rem 15rem;
+}
+
+.blog-header-top{
+    padding-top: 2rem;
+}
+
+.blog-content-btm{
+    padding-bottom: 3rem;
+}
+
+.blog-content{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 7rem;
+    row-gap: 3rem;
+    width: 100%;
+    height: auto;
+    transition: all 1s ease-in-out;
+}
+
+/* educational starts */
+.blog-thumbnail{
+    display: flex;
+    place-items: center;
+    width: 6rem;
+    height: 6rem;
+    margin: 2rem 0rem .5rem 10rem;
+}
+
+.blog-teaser{
+    padding: 1.5rem 45rem 0 0;
+}
+
+.blog-teaser a:hover{
+    color: var(--powder);
+}
+
+@media screen and (max-width: 75rem){
+
+    .blog-header{
+        padding: 3rem 0 2rem 5rem;
+    }
+
+    .blog-title{
+        padding-right: 10rem;
+    }
+
+    .blog-content,
+    .blog-header{
+        margin-left: 5rem;
+    }
+
+    .blog-content{
+        flex-wrap: wrap;
+        transition: all 1.5s ease-in-out;
+    }
+
+    .blog-thumbnail{
+        margin: 2rem 0rem .5rem 0rem;
+    }
+
+    .blog-teaser{
+        margin: 1.5rem 1.5rem 0 0;
+    }
+}
+
+@media screen and (max-width: 50rem){
+
+    .blog-header{
+        padding: 3rem 2rem 1rem 0rem;
+    }
+
+    .blog-title{
+        padding-right: 3rem;
+    }
+
+    .blog-content,
+    .blog-header{
+        margin-left: 2rem;
+    }
+
+    .blog-teaser{
+        padding: 1.5rem 1.5rem 0 0;
+    }
+}
+

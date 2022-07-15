@@ -1,0 +1,112 @@
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.section-header{
+    padding-bottom: 1rem;
+}
+
+.contact-form-container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 60% 40%;
+    grid-template:
+    "contact-form unwc-address";
+    grid-auto-flow: row;
+    column-gap: 3rem;
+    overflow: hidden;
+}
+
+.contact-info-header{
+    margin-bottom: .5rem;
+}
+
+#name,
+#email,
+#message{
+    font-size: .7em;
+}
+
+.contact-form{
+    grid-area: contact-form;
+}
+
+/* .contact-form{
+    margin: 0 1rem;
+} */
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--oregon-sky);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+    background-color: var(--sage);
+    color: var(--paper);
+    font-weight: 600;
+    font-size: var(--font-size-200);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+input[type=submit]:hover {
+    background-color: var(--basil);
+}
+
+.unwc-address{
+    grid-area: unwc-address;
+}
+
+.unwc-address{
+    text-align: center;
+}
+
+.unwc-address ul{
+    list-style: none;
+}
+
+.exec-title{
+    margin-bottom: .5rem;
+}
+
+
+/* Set the size of the div element that contains the map */
+
+@media screen and (max-width: 50rem){
+    
+
+    .contact-form-container{
+        grid-template-columns: 1lr;
+        grid-template:
+        "contact-form" 
+        "unwc-address";
+        grid-auto-flow: column;
+        column-gap: 3rem;
+        margin: 0 1.5rem;
+        overflow: hidden;
+    }
+
+    .contact-header{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .exec-title{
+        margin-top: 2.5rem;
+    }
+
+    .unwc-map{
+        margin: 5rem 0rem 5rem 0rem;
+    }
+}

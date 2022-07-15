@@ -1,0 +1,6 @@
+<div class="team-member-name">Wade Bullier</div>
+<div class="titles">Member-at-Large</div> 
+
+
+<div class="team-member-bio">
+<p>Wade Bullier is a fourth generation native Oregonian engaged in the management of a family-owned wood lot located on Rock Creek in southwest Columbia County, Oregon.  His interest in the stewardship of natural resources, including timber, clean air, water, and permaculture agricultural practices, is passed on from his grandparents, Raymond W. Cummins and Thelma Pettijohn Cummins.</p><p>Wade serves on the Upper Nehalem Watershed Council and is a lifelong salmon fisherman, whose photograph (above) indicates how that all began.  Photo credit:  R.W. Cummins (1958) / Joel Davis (2019).</p></div>

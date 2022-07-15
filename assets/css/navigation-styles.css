@@ -1,0 +1,251 @@
+/* reset */
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* navigation */
+.nav-links-grid{
+    display: grid;
+    position: fixed;
+    place-content: center;
+    grid-template-columns: repeat(1fr, 7);
+    grid-template-rows: 4rem;
+    grid-template-areas:
+    "logo-main nav-links nav-links nav-links nav-links nav-links nav-links";
+    column-gap: 5rem;
+    margin-top: 1rem;
+    background-color: var(--ocean);
+    width: 100%;
+    transition: all .5s ease-in-out;
+    z-index: 9999999;
+}
+
+.nav-wrapper .nav-links{
+    grid-area: nav-links;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+}
+
+.nav-links a{
+    font-size: var(--font-size-400);
+    color: var(--paper);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: var(--mauve);
+    opacity: 1;
+    transform: scale(1.1);
+    transition: .8s;
+    text-decoration: 1.5px var(--mauve) underline;
+}
+    
+/* logo */
+.ham-logo{
+    display: none;
+}
+
+.logo-main{
+    grid-area: logo-main;
+}
+
+#logo{
+    width: 3.6rem;
+    margin-top: .07rem;
+    height: auto;
+    margin-right: 3rem;
+}
+
+#logo:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/* dropdown menu */
+.dropdown ul{
+    list-style: none;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    width: 25rem;
+    line-height: 2.5rem;
+    top: 4rem;
+    left: inherit;
+    border: 1px var(--powder) solid;
+    background-color: var(--unwc-grey);
+    pointer-events: cursor;
+}
+
+.nav-links:hover .dropdown{
+    display: block;
+}
+
+.dropddown-link{
+    margin-left: 0;
+}
+
+.dropdown-link:hover{
+   background-color: var(--mauve);
+   opacity: .8;
+   transition: 1s; 
+}
+
+.dropdown-link a{
+    color: var(--rich-black);
+    text-decoration: none;
+    padding-right: .5rem;
+    padding-left: .5rem; 
+}
+
+.dropdown-link a:hover{
+    color: var(--paper);
+    transform: scale(1.05);
+    transition: .5s; 
+}
+
+/* make actual checkbox invisible */
+#nav-toggled{
+    display: none;
+}
+
+/* small screens */
+@media screen and (max-width: 75rem){
+
+    /* nav a links now in drop down */
+    .nav-wrapper{
+        top: 1rem;
+    }
+    
+    .nav-links-grid{
+        display: block;
+        grid-template-rows: repeat(1fr, 7);
+        grid-template-columns: 20rem;
+        grid-template-areas:
+        "nav-links" 
+        "nav-links" 
+        "nav-links" 
+        "nav-links" 
+        "nav-links" 
+        "nav-links";
+        margin-left: 0rem;
+        width: 12rem;
+        height: 20rem;
+        margin-top: 5rem;
+        transform: scale(1, 0);
+        transition-timing-function: ease-in;
+        transition: 1s;
+    }
+
+     /* make main logo disappear */
+     .logo-main{
+        display: none;
+    }
+
+    .nav-links{
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        margin-left: 1rem;
+    }
+
+    .nav-links a{
+        font-size: var(--font-size-400);
+        color: var(--paper);
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .nav-links:hover{
+        transform: scale(1.0);
+        transition: 0s; 
+        text-decoration: 1.5px var(--mauve) underline;
+    }
+
+    /* hamburger menu */
+    .ham-menu-grid{
+        display: grid;
+        position: fixed;
+        justify-content: space-between;
+        place-items: center;
+        grid-template-columns: repeat(1fr, 2);
+        grid-template-rows: 4rem;
+        grid-template-areas:
+        "ham-label ham-logo";
+        width: 100%;
+        margin-top: 1rem;
+        background-color: var(--ocean);
+        z-index: 9999999;
+    }
+
+    .ham-label-wrapper, .hlw{
+        display: flex;
+        place-items: center;
+        margin-left: .5rem;
+        height: 4rem;
+    }
+
+    .ham-label{
+        grid-area: ham-label;
+    }
+
+    .ham-label span,
+    .ham-label span::before,
+    .ham-label span::after{
+        display: block;
+        width: 2.5rem;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--mauve);
+    }
+
+    .ham-label span::before,
+    .ham-label span::after{
+        content: '';
+        position: absolute;
+    }
+
+    .ham-label span::before{ 
+        top: 1.2rem;
+    }
+
+    .ham-label span::after{  
+        bottom: 1.2rem;
+    }
+
+    #nav-toggled:checked ~ .nav-links-grid{
+        transform: scale(1, 1); 
+    }
+
+    .ham-label:hover, 
+    .ham-label-wrapper:hover{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .logo-ham{
+        grid-area: logo-ham;
+    }
+
+    .ham-logo{
+        display: flex;
+        align-items: center;
+        margin-top: .05rem;
+    }
+
+    .dropdown{
+        top: 2.3rem;
+        width: 20rem;
+        margin-left: 2rem;
+    }
+
+}

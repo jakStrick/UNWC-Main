@@ -1,0 +1,6 @@
+<div class="team-member-name">Susan Spicer-Pond</div>
+<div class="titles">Need Title</div> 
+
+
+<div class="team-member-bio">
+<p>Need Bio write up</p></div>

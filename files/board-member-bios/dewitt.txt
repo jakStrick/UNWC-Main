@@ -1,0 +1,6 @@
+<div class="team-member-name">Eric DeWitt
+</div>
+<div class="titles">Treasurer
+</div>
+
+<div class="team-member-bio"><p>Eric, our Weyerhaeuser representative, joined the UNWC Board in 2021 as the treasurer.</p></div>

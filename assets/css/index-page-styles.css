@@ -1,0 +1,176 @@
+/*  /* reset */
+*, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+ /* ......./ report boxes /......... */
+.box-container{
+  display: flex;
+  place-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  transition: all .5s ease-in-out .3s;
+}
+
+.img-container {
+  display: flex;
+  position: relative;
+  text-align: center;
+  max-width: 100%;
+}
+
+.report-link{
+  position: absolute;
+  inset-block-start: 50%;
+  transform: translate(0%, -50%); 
+  font-weight: 900;
+  width: 100%;
+  color: var(--paper);
+  text-decoration: underline;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.report-link:hover{
+  animation: animate .8s linear;
+  color: var(--powder);
+  cursor: pointer;
+}
+
+@keyframes animate {
+
+  50%
+  {
+    transform: scale(1.07);
+  }
+  
+}
+
+ /* ......./ main body section "What's Happening..." /......... */
+.module-p a:hover{
+  color: var(--powder);
+}
+
+/* ......./ volunteer Join Us /......... */
+.section-volunteer{
+  display: flex;
+  place-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 5rem;
+  margin-bottom: .5rem;
+  width: 100%;
+}
+
+.volunteer-image img{
+  width: 30rem;
+  height: auto;
+  border-radius: .5rem;
+}
+
+.volunteer-p{
+  width: 50%;
+  text-align: left;
+}
+
+.volunteer-p a{
+  color: var(--mauve);
+  padding: 0 .5rem;
+}
+
+.volunteer-p a:hover{
+  color: var(--powder);
+}
+
+/* ......./ blog section /......... */
+.blog-container{
+  display: flex;
+  place-content: center;
+  place-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  column-gap: 8rem;
+  row-gap: 3rem;
+}
+
+.blog-image{
+  position: relative;
+  width: 20rem;
+  height: auto;
+  margin: 0 auto;
+  border: 2px var(--unwc-grey) solid;
+  box-shadow: 0 3px 10px darkgray;
+}
+
+.blog-title:hover,
+.blog-link:hover{
+  color: var(--powder);
+}
+
+/* donation section */
+.donation-proposition{
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.donate-button,
+.plant-a-tree{
+  text-align: center;
+  padding-top: .5rem;
+}
+
+@media screen and (max-width: 75rem){
+
+  .section-0 p{
+    width: 95%;
+  }
+
+  .box-image{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /* what's happening */
+  .section-3 p{
+    width: 95%;
+  }
+
+  .flex-blog-container{
+    row-gap: 2rem;
+  }
+
+  #blog-image{
+    width: 20rem;
+    margin: 0 auto;
+  }
+
+  /* volunteer */
+  #v-img{
+    width: 22rem;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border-radius: .5rem;
+  }
+
+  .volunteer-message{
+    width: 90%;
+  }
+  
+  .section-4 p{
+    width: 95%;
+    margin-bottom: 3rem;
+  }
+
+  .section-6 p{
+    width: 90%;
+  }
+
+}
