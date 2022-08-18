@@ -42,14 +42,11 @@
     --font-size-900: 3.75em; /*---- page title headers ----*/
     --font-header-main: clamp(2rem, 4vw, 9rem);
     --font-header-section: clamp(1.1rem, 2.5vw, 3.5rem);
+    --font-header-resource: clamp(1.3rem, 2vw, 2rem);
     --font-header-minor: clamp(.8rem, 1vw, 1.5rem);
     --font-body-paragraph: clamp(1rem, 1.2vw, 1.5rem);
     --font-name: clamp(.8rem, 1vw, 1.5rem);
     --font-titles: clamp(1rem, 1.5vw, 1.3rem);
-    --font-name: clamp(.8rem, 1vw, 1.5rem);
-
-    --max-media-width: 75rem;
-    --min-media-width: 40rem;
   }
 
   .dusty-blue{
@@ -136,7 +133,8 @@
 
 .main-header,
 .section-header,
-.minor-header{
+.minor-header,
+.resource-header {
   font-family: "FertigoPro-Regular";
   text-transform: uppercase;
   font-weight: 900;
@@ -156,6 +154,10 @@
 
 .minor-header{
   font-size: var(--font-header-minor); 
+}
+
+.resource-header {
+  font-size: var(--font-header-resource);
 }
 
 .titles{

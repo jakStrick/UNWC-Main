@@ -5,8 +5,8 @@ let slideIndex = 0;
 
 // selects an image based on view port size
 function adjustImage(dirty){
-
-    if( !dirty)
+  
+    if( !dirty )
     return;
 
     const vpw = $(window).width();
@@ -24,40 +24,25 @@ function adjustImage(dirty){
     else{
       dirNum = 1;
     }
-   
-    //console.log("View Port width = " + vpw);
 
     var imgLoc = document.getElementById('main-header-image');
     var tempLoc = imgLoc.src;
-    console.log("Image location = " + imgLoc.src);
 
     tempLoc = tempLoc.split("/");
     var tl = "";
-
-    for (var i = 0; i <= tempLoc.length; i++){
-
-        //console.log("TempLoc i = " + tempLoc[i] + " i = " + i);
-
-        if ( tempLoc[i] == "images" ){
-
-          for (var j = i; j <= tempLoc.length - 1; j++){
-            tl = tl + "/" + tempLoc[j];
-        }
-      }
+    
+    //get path from images folder which is 3rd array location
+    //and add back the slashes to make complete path so images 
+    //reload to proper size for view port.
+    for (var i = 3; i <= tempLoc.length - 1; i++){
+        tl = tl + "/" + tempLoc[i];
     }
-
-    //console.log("Image temp location = " + tl);
 
     tempLoc = tl.slice(0, 19);
     tl = tl.slice(20);
-
-    console.log("Temp1 loc = " + tempLoc + " Temp2 loc = " + tl);
-
-    console.log("dirNum = " + dirNum + " image changed = " + dirty);
-
-    console.log("new location = " + tempLoc + dirNum + tl)
       
     var newImgLoc = tempLoc + dirNum + tl;
+    //console.log("new location = " + newImgLoc);
     imgLoc.src = newImgLoc;
 }
 

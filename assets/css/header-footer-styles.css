@@ -13,7 +13,8 @@
 
 .main-header,
 .section-header,
-.minor-header{
+.minor-header,
+.resource-header {
     text-align: center;
     width: 100%;
 }
@@ -74,12 +75,16 @@
 
 /* style section and other headers */
 .section-header{
-    text-align: center;
     margin-bottom: 2rem;
     color: var(--rich-black);
 }
 
 .minor-header{
+    color: var(--rich-black);
+    margin-bottom: 1rem;
+}
+
+.resource-header{
     color: var(--rich-black);
     margin-bottom: 1rem;
 }
@@ -136,6 +141,14 @@
     place-content: center;
     padding: 2rem 0 5rem 0;
     background-color: var(--ocean);
+}
+
+.developer{
+    font-size: .5em;
+    width: 100%;
+    background-color: var(--ocean);
+    padding-bottom: 1rem;
+    padding-left: 1rem;
 }
 
 .horizontal-line-thin{

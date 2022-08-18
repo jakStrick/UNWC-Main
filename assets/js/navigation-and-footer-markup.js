@@ -109,7 +109,7 @@ const footerTemplate = document.createElement('template');
 
 footerTemplate.innerHTML = `
     <!-- Footer/Social Pages -->
-    <link rel="stylesheet" href="assets/css/index-page-styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/header-footer-styles.css">
     <div>
         <span class="separator-thin"></span>
@@ -177,6 +177,11 @@ footerTemplate.innerHTML = `
     <span class="horizontal-line-thin"></span>
     <div class="copywright">
         <h3>&copyUNWC 2022</h3>
+    </div>
+    <div class="developer">
+        Developed by:<br>
+        David Strickland - Mar 2022<br>
+        Website: <a href="www.jakspage.com">www.jakspage.com</a>
     </div>
     `
 class Footer extends HTMLElement {
